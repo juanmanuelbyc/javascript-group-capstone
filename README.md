@@ -2,9 +2,9 @@
 
 # Java Script group capstone
 
-> Building our(group) own web application based on an external API. An external API that provides data about a topic that the group like and then build the webapp around it. The webapp will have 2 interfaces  
-> - A home page showing a list of items that we(group) "like.  
->  - A popup window with more data about an item and will be able to comment on it.
+This is a web application based on an external API. The external API provides data about TV shows. The web app will have 2 interfaces: 
+- A home page showing a list of items that you can like 
+- A popup window with more data about an item and will be able to comment on it.
 
 
 ## Built With
@@ -63,5 +63,5 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 

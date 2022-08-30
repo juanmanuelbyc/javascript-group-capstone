@@ -55,4 +55,6 @@
     box-shadow: aquamarine;
   }
 
-  
+  .myImage {
+    background-image: url(../images/bkgn1.jpg);
+  }

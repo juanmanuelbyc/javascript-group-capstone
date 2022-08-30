@@ -6,6 +6,9 @@ const json5 = require('json5');
 
 module.exports = {
   mode: 'development',
+  experiments: {
+    topLevelAwait: true
+  },
   entry: './src/index.js',
   devtool: 'inline-source-map',
   devServer: {

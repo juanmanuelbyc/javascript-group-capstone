@@ -1,4 +1,10 @@
 /* Main Navigation */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .main-nav {
     display: flex;
     padding: 20px 0;
@@ -42,9 +48,25 @@
     display: flex;
   }
 
-  .js-section {
-    height: 80vh;
-  }
+ 
+ .showsContainer {
+  padding: 20px 100px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 100px;
+ }
+
+ .show-card {
+  margin: 20px 0;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5%;
+  border-style: solid;
+  border-color: #000;
+ }
 
   .footer-border {
     padding-left: 50px;
@@ -53,8 +75,4 @@
     font-weight: bold;
     font-size: 30px;
     box-shadow: aquamarine;
-  }
-
-  .myImage {
-    background-image: url(../images/bkgn1.jpg);
   }

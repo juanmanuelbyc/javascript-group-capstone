@@ -21,7 +21,7 @@ export const postLike = async (id) => {
   });
 }
 
-const getlikes = async () => {
+export const getlikes = async () => {
   const url = involvementBaseUrl + 'likes';
   const likes = await fetch(url).then((likes) => likes.json());
   return likes;

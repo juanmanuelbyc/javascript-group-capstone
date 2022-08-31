@@ -63,6 +63,12 @@
   border-color: #000;
 }
 
+.likesLine {
+  display: flex;
+  margin: 5px 0;
+  gap:5px
+}
+
 .popup-container {
   background-color: rgba(36, 49, 36, 0.8);
   z-index: 9999;

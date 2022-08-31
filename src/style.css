@@ -1,55 +1,50 @@
-/* Main Navigation */
-
 * {
   padding: 0;
   margin: 0;
 }
 
 .main-nav {
-    display: flex;
-    padding: 20px 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .main-nav ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    margin-right: 60px;
-    
-  }
-  
-  .main-nav ul a {
-    padding: 20px;
-    color: #000;
-    font-weight: bold;
-    font-size: 30px;
-    text-decoration: none;
-  }
-  
-  .main-nav ul a.selected {
-    color: #000;
-  }
-  
-  .main-nav ul a:hover {
-    color: blue;
-  }
-  
-  .main-nav-inner {
-    display: flex;
-    width: 900px;
-    justify-content: space-between;
-    margin: 0 auto;
-    align-items: center;
-    padding: 0 20px;
-  }
-  
-  .right-side-menus {
-    display: flex;
-  }
+  display: flex;
+  padding: 20px 0;
+}
 
- 
- .showsContainer {
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.main-nav ul a {
+  padding: 20px;
+  color: #000;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.main-nav ul a.selected {
+  color: #000;
+}
+
+.main-nav ul a:hover {
+  color: blue;
+}
+
+.main-nav-inner {
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.right-side-menus {
+  display: flex;
+}
+
+.showsContainer {
   padding: 20px 100px;
   list-style: none;
   display: flex;
@@ -57,22 +52,45 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 100px;
- }
+}
 
- .show-card {
+.show-card {
   margin: 20px 0;
   padding: 10px;
   width: 300px;
   border-radius: 5%;
   border-style: solid;
   border-color: #000;
- }
+}
 
-  .footer-border {
-    padding-left: 50px;
-    border: 2px solid #000;
-    color: #000;
-    font-weight: bold;
-    font-size: 30px;
-    box-shadow: aquamarine;
-  }
+.popup-container {
+  background-color: rgba(36, 49, 36, 0.8);
+  z-index: 9999;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 90vw;
+  height: 60vh;
+  margin: 50px auto;
+  overflow-y: auto;
+  right: 0;
+  bottom: 0;
+  padding: 24px;
+}
+
+.x-text {
+  width: auto;
+  color: yellow;
+  font-size: 24px;
+  text-align: right;
+  align-items: right;
+  cursor: pointer;
+}
+
+.footer-border {
+  padding-left: 50px;
+  border: 2px solid #000;
+  color: #000;
+  font-weight: bold;
+  font-size: 30px;
+}

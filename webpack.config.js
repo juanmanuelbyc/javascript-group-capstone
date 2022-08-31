@@ -7,7 +7,7 @@ const json5 = require('json5');
 module.exports = {
   mode: 'development',
   experiments: {
-    topLevelAwait: true
+    topLevelAwait: true,
   },
   entry: './src/index.js',
   devtool: 'inline-source-map',
@@ -31,7 +31,7 @@ module.exports = {
     rules: [
       {
         test: /\.html$/i,
-        loader: "html-loader",
+        loader: 'html-loader',
       },
       {
         test: /\.css$/i,

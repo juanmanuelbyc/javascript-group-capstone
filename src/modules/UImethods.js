@@ -1,3 +1,5 @@
+import itemsCount from "./itemsCount";
+
 export const renderShows = (showsData) => {
   document.querySelector('.showsContainer').innerHTML = '';
   showsData.forEach((show) => {
@@ -11,13 +13,7 @@ export const renderShows = (showsData) => {
     <button type="button" id="${show.externals.imdb}">Details</button>
     </div>`;
   });
+  document.querySelector('.showsLink').innerHTML = 'shows '+itemsCount(showsData);
 }
 
-export const itemsCount = (showsIds) => {
-  return showsIds.length;
-}
 
-export const displayItemsCount = (numberOfItems) => {
-  const text = 'Shows '+numberOfItems;
-  document.querySelector('.showsLink').innerHTML = text;
-}

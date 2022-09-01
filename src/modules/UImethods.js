@@ -14,7 +14,6 @@ export const renderShows = (showsData) => {
 }
 
 export const itemsCount = (showsIds) => {
-  console.log(showsIds.length);
   return showsIds.length;
 }
 

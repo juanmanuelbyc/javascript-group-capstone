@@ -11,13 +11,11 @@ export const renderShows = (showsData) => {
     <button type="button" id="${show.externals.imdb}">Details</button>
     </div>`;
   });
-}
+};
 
-export const itemsCount = (showsIds) => {
-  return showsIds.length;
-}
+export const itemsCount = (showsIds) => showsIds.length;
 
 export const displayItemsCount = (numberOfItems) => {
-  const text = 'Shows '+numberOfItems;
+  const text = `Shows ${numberOfItems}`;
   document.querySelector('.showsLink').innerHTML = text;
-}
+};

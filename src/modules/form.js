@@ -35,17 +35,28 @@ const form = (obj) => {
   child.appendChild(form);
 
   form.addEventListener('submit', (e) => {
-    e.preventDefault();
     const imdbId = e.submitter.parentElement.id;
+    const container = document.querySelector('.comments-container');
+    const count = document.querySelectorAll(`.${imdbId}`).length;
+    e.preventDefault();
     const name = form.elements.Name.value;
     const insights = form.elements.Insights.value;
-    if (name !== '' && insights !== '') {
+    if (name !== '' && insights !== '' && /[a-zA-Z]/.test(name)) {
       const myObject = {
         item_id: imdbId,
         username: name,
         comment: insights,
       };
       send(myObject);
+
+      const text = document.querySelector('.comments');
+      text.innerText = ` Comments (${count + 1})`;
+      const div = document.createElement('div');
+      div.className = imdbId;
+      const today = new Date().toISOString().slice(0, 10);
+      div.innerText = `${today} \b ${name}: ${insights}`;
+      container.appendChild(div);
+
       form.elements.Name.value = '';
       form.elements.Insights.value = '';
     }

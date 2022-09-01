@@ -119,7 +119,7 @@
   margin-top: 20px;
   text-align: center;
   font-size: 18px;
-  color: #00ff00;
+  color: #0f0;
 }
 
 .popup-container > form {
@@ -173,7 +173,7 @@
   transform: rotate(-2deg);
 }
 
-.comments-row {
+.comments-container > div {
   color: #456789;
   font-size: 20px;
   text-align: left;
@@ -187,6 +187,7 @@
   font-weight: bold;
   font-size: 30px;
 }
+
 .showsLine {
   display: inline-flex;
   align-items: center;

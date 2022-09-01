@@ -1,12 +1,11 @@
-const populateComments = (ArrayObj) => {
-  const cont = document.querySelector('.comments-container');
-  const array = ArrayObj;
+const populateComments = (imdbId, ArrayObj) => {
+  const container = document.querySelector('.comments-container');
   if (ArrayObj) {
-    array.forEach((item) => {
+    ArrayObj.forEach((item) => {
       const div = document.createElement('div');
-      div.className = 'comments-row';
+      div.className = imdbId;
       div.innerText = `${item.creation_date} \b ${item.username}: ${item.comment}`;
-      cont.appendChild(div);
+      container.appendChild(div);
     });
   }
 };

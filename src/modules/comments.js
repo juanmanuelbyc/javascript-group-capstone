@@ -1,4 +1,4 @@
-import populate from './populate.js';
+import getData from './getData.js';
 import form from './form.js';
 import commentsCount from './commentsCount.js';
 
@@ -12,7 +12,7 @@ const comments = (obj) => {
   commentsContainer.className = 'comments-container';
   child.appendChild(commentsContainer);
 
-  populate(obj);
+  getData(obj);
   form(obj);
 
   commentsCount(obj);

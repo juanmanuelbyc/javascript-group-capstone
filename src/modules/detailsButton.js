@@ -41,7 +41,7 @@ const retriveData = async (imdbId) => {
   popup(Obj);
 };
 
-const commentsButton = () => {
+const detailsButton = () => {
   const btns = document.querySelectorAll('[id^=tt]');
   btns.forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -50,4 +50,4 @@ const commentsButton = () => {
   });
 };
 
-export default commentsButton;
+export default detailsButton;

@@ -3,7 +3,7 @@ const commentsCount = async (obj) => {
   const response = await fetch(requestURL + obj.externals.imdb);
   const Obj = await response.json();
   const text = document.querySelector('.comments');
-  text.innerText += ` (${Object.keys(Obj).length})`;
+  text.innerText = ` Comments (${Object.keys(Obj).length})`;
   return Obj;
 };
 

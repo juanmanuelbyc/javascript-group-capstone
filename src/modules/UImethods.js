@@ -15,5 +15,3 @@ export const renderShows = (showsData) => {
   });
   document.querySelector('.showsLink').innerHTML = 'shows '+itemsCount(showsData);
 }
-
-

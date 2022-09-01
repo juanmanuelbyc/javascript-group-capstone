@@ -187,3 +187,7 @@
   font-weight: bold;
   font-size: 30px;
 }
+.showsLine {
+  display: inline-flex;
+  align-items: center;
+}

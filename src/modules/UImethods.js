@@ -1,4 +1,4 @@
-const renderShows = (showsData) => {
+export const renderShows = (showsData) => {
   document.querySelector('.showsContainer').innerHTML = '';
   showsData.forEach((show) => {
     document.querySelector('.showsContainer').innerHTML += `
@@ -11,6 +11,14 @@ const renderShows = (showsData) => {
     <button type="button" id="${show.externals.imdb}">Details</button>
     </div>`;
   });
-};
+}
 
-export default renderShows;
+export const itemsCount = (showsIds) => {
+  console.log(showsIds.length);
+  return showsIds.length;
+}
+
+export const displayItemsCount = (numberOfItems) => {
+  const text = 'Shows '+numberOfItems;
+  document.querySelector('.showsLink').innerHTML = text;
+}

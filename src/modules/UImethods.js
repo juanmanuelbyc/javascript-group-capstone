@@ -1,4 +1,4 @@
-import { getlikes, postLike } from "./APImethods";
+import { getlikes, postLike } from './APImethods.js';
 
 export const renderShows = (showsData) => {
   document.querySelector('.showsContainer').innerHTML = '';
@@ -19,33 +19,28 @@ export const renderShows = (showsData) => {
   });
 };
 
-export const getButtonsList = () => {
-  return document.querySelectorAll('.button');
-};
+export const getButtonsList = () => document.querySelectorAll('.button');
 
-export const getLikesCounters = () => {
-  return document.querySelectorAll('.likesCount');
-};
-
-export const setClickListeners = (buttonsList) => {
-  buttonsList.forEach(button => {
-    button.addEventListener('click', (e) => {buttonClicked(e.target)});
-  })
-};
-
-const buttonClicked = async (target) => {
-  if (target.classList.contains('likeButton')){
-  await postLike(target.id);
-  await populateLikes(getLikesCounters());
-  }
-}
+export const getLikesCounters = () => document.querySelectorAll('.likesCount');
 
 export const populateLikes = async (likesCounters) => {
   const likes = await getlikes();
-  likes.forEach(element => {
-    likesCounters.forEach(likeCount => {
-      if (likeCount.id == element.item_id) likeCount.innerHTML = element.likes;
+  likes.forEach((element) => {
+    likesCounters.forEach((likeCount) => {
+      if (likeCount.id === element.item_id) likeCount.innerHTML = element.likes;
     });
   });
-}
+};
 
+const buttonClicked = async (target) => {
+  if (target.classList.contains('likeButton')) {
+    await postLike(target.id);
+    await populateLikes(getLikesCounters());
+  }
+};
+
+export const setClickListeners = (buttonsList) => {
+  buttonsList.forEach((button) => {
+    button.addEventListener('click', (e) => { buttonClicked(e.target); });
+  });
+};

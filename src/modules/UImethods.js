@@ -10,7 +10,7 @@ export const renderShows = (showsData) => {
     <img src=${show.image.medium}  width="290" height="290"/>
     <p>${show.summary.substring(0, 300)}</p>
     <button type="button">Like!</button>
-    <button type="button" id="${show.externals.imdb}">Details</button>
+    <button type="button" id="${show.externals.imdb}">Comments</button>
     </div>`;
   });
   document.querySelector('.showsLink').innerHTML = `shows ${itemsCount(showsData)}`;

@@ -1,6 +1,6 @@
-import itemsCount from './itemsCount';
+import itemsCount from './itemsCount.js';
 
-export const renderShows = (showsData) => {
+const renderShows = (showsData) => {
   document.querySelector('.showsContainer').innerHTML = '';
   showsData.forEach((show) => {
     document.querySelector('.showsContainer').innerHTML += `
@@ -15,3 +15,5 @@ export const renderShows = (showsData) => {
   });
   document.querySelector('.showsLink').innerHTML = `shows (${itemsCount(showsData)})`;
 };
+
+module.exports = renderShows;

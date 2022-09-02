@@ -14,9 +14,9 @@ This is a web application based on an external API. The external API provides da
 - html & css
 
 
-## Live Demo (if available)
+## Presentation Video
 
-[Live Demo Link](https://www.loom.com/share/161f050b52684360b8dc911c5c199d40)
+[Project Presentation](https://www.loom.com/share/161f050b52684360b8dc911c5c199d40)
 
 
 ## Getting Started

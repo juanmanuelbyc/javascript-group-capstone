@@ -13,5 +13,5 @@ export const renderShows = (showsData) => {
     <button type="button" id="${show.externals.imdb}">Comments</button>
     </div>`;
   });
-  document.querySelector('.showsLink').innerHTML = `shows ${itemsCount(showsData)}`;
+  document.querySelector('.showsLink').innerHTML = `shows (${itemsCount(showsData)})`;
 };

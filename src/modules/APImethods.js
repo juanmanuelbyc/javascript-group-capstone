@@ -1,14 +1,13 @@
-const tvmazeApiBaseUrl = 'https://api.tvmaze.com/lookup/shows?imdb=';
 const involvementBaseUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/dnotAWJTR3nbocRUoECT/';
 
-/* eslint-disable no-await-in-loop */
-export const getShowsData = async (showsIds) => {
-  const showsData = [];
-  for (let i = 0; i < (showsIds.length); i += 1) {
-    const data = await fetch(tvmazeApiBaseUrl + showsIds[i]).then((data) => data.json());
-    showsData.push(data);
-  }
-  return showsData;
+const website = 'http://api.tvmaze.com/shows';
+
+export const getShowsData = async () => {
+  let movies = [];
+  await fetch(website)
+    .then((response) => response.json())
+    .then((data) => { movies = [...data]; });
+  return movies;
 };
 
 export const postLike = async (id) => {

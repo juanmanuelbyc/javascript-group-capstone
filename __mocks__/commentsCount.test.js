@@ -8,7 +8,13 @@ import retriveData from '../src/modules/retriveData.js';
 
 const imdbId = 'tt0903747';
 
-const count = commentsCount(retriveData(imdbId));
+
+
+const count = 0;
+
+commentsCount(retriveData(imdbId)).then((count) => {
+  count += count;
+}).then(
 
 describe('comments count', () => {
   test('add comment', () => {
@@ -22,4 +28,5 @@ describe('comments count', () => {
       expect(data).toEqual(count + 1);
     });
   });
-});
+})
+);

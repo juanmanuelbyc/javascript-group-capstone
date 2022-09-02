@@ -1,4 +1,4 @@
-const itemsCount = require('./modules/itemsCount.js');
+import itemsCount from '../src/modules/itemsCount.js';
 
 const arrayLength0 = [];
 const arrayLength3 = [1, 2, 3];

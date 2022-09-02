@@ -1,3 +1,5 @@
+import commentsCounter from './commentsCounter.js';
+
 const populateComments = (imdbId, ArrayObj) => {
   const container = document.querySelector('.comments-container');
   if (ArrayObj) {
@@ -8,6 +10,7 @@ const populateComments = (imdbId, ArrayObj) => {
       container.appendChild(div);
     });
   }
+  document.querySelector('.comments').innerText = `Comments (${commentsCounter(ArrayObj)})`;
 };
 
 export default populateComments;

@@ -16,7 +16,7 @@ This is a web application based on an external API. The external API provides da
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://www.loom.com/share/161f050b52684360b8dc911c5c199d40)
 
 
 ## Getting Started
@@ -28,6 +28,15 @@ git clone https://github.com/PRATAP-KUMAR/javascript-capstone-project
 cd javascript-capstone-project
 npm install
 npm start
+````
+
+## To Test
+
+run following command
+
+````
+npm install jest
+npm test
 ````
 
 ## Authors

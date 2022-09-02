@@ -35,6 +35,7 @@ npm start
 run following command
 
 ````
+npm install jest
 npm test
 ````
 

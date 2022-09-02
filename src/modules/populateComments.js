@@ -10,7 +10,7 @@ const populateComments = (imdbId, ArrayObj) => {
       container.appendChild(div);
     });
   }
-  document.querySelector('.comments').innerText = commentsCounter(ArrayObj);
+  document.querySelector('.comments').innerText = `Comments (${commentsCounter(ArrayObj)})`;
 };
 
 export default populateComments;

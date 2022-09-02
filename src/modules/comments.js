@@ -1,6 +1,5 @@
 import getData from './getData.js';
 import form from './form.js';
-import commentsCount from './commentsCount.js';
 
 const comments = (obj) => {
   const child = document.querySelector('.popup-container');
@@ -14,10 +13,6 @@ const comments = (obj) => {
 
   getData(obj);
   form(obj);
-
-  commentsCount(obj.externals.imdb).then((data) => {
-    h2.innerText = `Comments (${data})`;
-  });
 };
 
 export default comments;

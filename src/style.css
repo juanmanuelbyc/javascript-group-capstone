@@ -63,22 +63,16 @@
   border-color: #000;
 }
 
-.likesLine {
-  display: flex;
-  margin: 5px 0;
-  gap:5px
-}
-
 .popup-container {
-  background-color: rgba(36, 49, 36, 0.8);
+  background-color: rgba(36, 49, 36, 1);
   z-index: 9999;
   position: fixed;
-  top: 100px;
+  top: 0;
   left: 0;
-  width: 90vw;
-  height: 60vh;
-  margin: 50px auto;
-  overflow-y: auto;
+  width: 50vw;
+  height: 100vh;
+  margin: 0 auto;
+  overflow-y: scroll;
   right: 0;
   bottom: 0;
   padding: 24px;
@@ -89,8 +83,101 @@
   color: yellow;
   font-size: 24px;
   text-align: right;
-  align-items: right;
   cursor: pointer;
+}
+
+.show-image {
+  position: relative;
+  text-align: center;
+  display: flex;
+}
+
+.show-image > img {
+  margin: auto;
+}
+
+.show-name {
+  position: relative;
+  color: blue;
+  font-size: 40px;
+  text-align: center;
+}
+
+.show-details {
+  font-size: 24px;
+  color: #fff;
+}
+
+.comments {
+  margin: 24px 0;
+  color: #555fff;
+  font-size: 30px;
+  text-align: center;
+}
+
+.add-comment {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #00ff00;
+}
+
+.popup-container > form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.popup-container > form > input {
+  width: 15rem;
+  height: 2rem;
+  border-radius: 8px;
+}
+
+.popup-container > form > input:nth-child(2) {
+  text-align: left;
+  width: 25rem;
+  height: 10rem;
+  border-radius: 8px;
+  color: orange;
+  align-items: start;
+}
+
+.popup-container > form > button {
+  display: inline-block;
+  background-color: #7b38d8;
+  border-radius: 10px;
+  border: 4px double #ccc;
+  color: #eee;
+  text-align: center;
+  font-size: 1rem;
+  padding: 2px;
+  width: 8rem;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.popup-container > form > button:hover {
+  background-color: orange;
+  transform: rotate(2deg);
+}
+
+.popup-container > form > button:active {
+  background-color: cyan;
+  transform: rotate(-2deg);
+}
+
+.comments-row {
+  color: #456789;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 350px;
 }
 
 .footer-border {

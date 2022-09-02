@@ -15,7 +15,9 @@ const comments = (obj) => {
   getData(obj);
   form(obj);
 
-  commentsCount(obj);
+  commentsCount(obj.externals.imdb).then((data) => {
+    h2.innerText = `Comments (${data})`;
+  });
 };
 
 export default comments;

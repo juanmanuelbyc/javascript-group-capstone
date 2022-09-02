@@ -1,4 +1,4 @@
-import itemsCount from "./itemsCount";
+import itemsCount from './itemsCount';
 
 export const renderShows = (showsData) => {
   document.querySelector('.showsContainer').innerHTML = '';
@@ -13,5 +13,5 @@ export const renderShows = (showsData) => {
     <button type="button" id="${show.externals.imdb}">Details</button>
     </div>`;
   });
-  document.querySelector('.showsLink').innerHTML = 'shows '+itemsCount(showsData);
-}
+  document.querySelector('.showsLink').innerHTML = `shows ${itemsCount(showsData)}`;
+};

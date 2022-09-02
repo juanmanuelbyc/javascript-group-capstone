@@ -50,7 +50,7 @@ const form = (obj) => {
       send(myObject);
 
       const text = document.querySelector('.comments');
-      text.innerText = ` Comments (${count + 1})`;
+      text.innerText = `Comments (${count + 1})`;
       const div = document.createElement('div');
       div.className = imdbId;
       const today = new Date().toISOString().slice(0, 10);

@@ -42,7 +42,7 @@ const retriveData = async (imdbId) => {
 };
 
 const detailsButton = () => {
-  const btns = document.querySelectorAll('[id^=tt]');
+  const btns = document.querySelectorAll('.commentsButton');
   btns.forEach((btn) => {
     btn.addEventListener('click', () => {
       retriveData(btn.id);

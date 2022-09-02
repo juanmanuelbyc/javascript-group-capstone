@@ -30,6 +30,14 @@ npm install
 npm start
 ````
 
+## To Test
+
+run following command
+
+````
+npm test
+````
+
 ## Authors
 
 👤 **Juan Diaz (Juan Diaz)**
